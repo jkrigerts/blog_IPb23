@@ -22,21 +22,4 @@ if (isset($_GET["search_query"]) && $_GET["search_query"] != "" ) {
 }
 $posts = $db->query($select, $params)->fetchAll();
 
-
-echo "<h1>Blogs</h1>";
-
-echo "<form>";
-echo "<input name='search_query' />";
-echo "<button>Meklēt</button>";
-echo "</form>";
-
-if (count($posts) == 0 ) {
-    echo "Nav atrasts neviens ieraksts 😭 lūdzu pamēģini citu vārdu 🐣";
-}
-
-echo "<ul>";
-foreach($posts as $post) {
-    echo "<li>" . $post["content"] . "</li>";
-}
-echo "</ul>";
-
+require "./views/index.view.php";
