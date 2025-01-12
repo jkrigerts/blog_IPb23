@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 7px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+header ul {
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+header ul li {
+  padding: 7px 15px;
+}
+

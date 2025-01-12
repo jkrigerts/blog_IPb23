@@ -22,4 +22,6 @@ if (isset($_GET["search_query"]) && $_GET["search_query"] != "" ) {
 }
 $posts = $db->query($select, $params)->fetchAll();
 
+$pageTitle = "Blogs";
+$style = "css/style1.css";
 require "./views/index.view.php";
